@@ -3,9 +3,10 @@ using FastEndpoints;
 
 var bld = WebApplication.CreateBuilder();
 
-bld.Services.AddScoped<IPersonRepository, PersonRepository>();
+bld.Services.AddSingleton<IPersonRepository, PersonRepository>();
 
 bld.Services.AddFastEndpoints();
+bld.Services.AddMemoryCache();
 
 var app = bld.Build();
 app.UseFastEndpoints();

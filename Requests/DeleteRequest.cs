@@ -1,7 +1,6 @@
-﻿namespace AwesomeLibrary.Requests
+﻿namespace AwesomeLibrary.Requests;
+
+public class DeleteRequest
 {
-    public class DeleteRequest
-    {
-        public int Id { get; set; }
-    }
+    public int Id { get; set; }
 }

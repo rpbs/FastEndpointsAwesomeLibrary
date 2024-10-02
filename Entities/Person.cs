@@ -1,9 +1,8 @@
-﻿namespace AwesomeLibrary.Entities
+﻿namespace AwesomeLibrary.Entities;
+
+public class Person
 {
-    public class Person
-    {
-        public int Id { get; set; }
-        public string Name { get; set; } = null!;
-        public int Age { get; set; }
-    }
+    public int Id { get; set; }
+    public string Name { get; set; } = null!;
+    public int Age { get; set; }
 }

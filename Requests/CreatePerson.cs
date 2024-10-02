@@ -1,8 +1,7 @@
-﻿namespace AwesomeLibrary.Requests
+﻿namespace AwesomeLibrary.Requests;
+
+public class CreatePerson
 {
-    public class CreatePerson
-    {
-        public string Name { get; set; }
-        public int Age { get; set; }
-    }
+    public string Name { get; set; }
+    public int Age { get; set; }
 }

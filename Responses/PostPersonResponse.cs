@@ -1,9 +1,8 @@
-﻿namespace AwesomeLibrary.Responses
+﻿namespace AwesomeLibrary.Responses;
+
+public class PostPersonResponse
 {
-    public class PostPersonResponse
-    {
-        public int Id { get; internal set; }
-        public string Name { get; internal set; }
-        public int Age { get; internal set; }
-    }
+    public int Id { get; internal set; }
+    public string Name { get; internal set; }
+    public int Age { get; internal set; }
 }

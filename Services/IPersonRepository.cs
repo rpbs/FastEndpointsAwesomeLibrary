@@ -2,13 +2,12 @@
 using AwesomeLibrary.Requests;
 using System.Collections.ObjectModel;
 
-namespace AwesomeLibrary.Services
+namespace AwesomeLibrary.Services;
+
+public interface IPersonRepository
 {
-    public interface IPersonRepository
-    {
-        Person Get(int id);
-        ReadOnlyCollection<Person> Get();
-        void Delete(int personId);
-        Person Insert (CreatePerson person);
-    }
+    Person Get(int id);
+    ReadOnlyCollection<Person> Get();
+    void Delete(int personId);
+    Person Insert (CreatePerson person);
 }
